@@ -1,0 +1,15 @@
+D:\Users\pbiradar\source\repos\Generics\Generics\bin\Debug\net6.0\Generics.exe
+D:\Users\pbiradar\source\repos\Generics\Generics\bin\Debug\net6.0\Generics.deps.json
+D:\Users\pbiradar\source\repos\Generics\Generics\bin\Debug\net6.0\Generics.runtimeconfig.json
+D:\Users\pbiradar\source\repos\Generics\Generics\bin\Debug\net6.0\Generics.dll
+D:\Users\pbiradar\source\repos\Generics\Generics\bin\Debug\net6.0\ref\Generics.dll
+D:\Users\pbiradar\source\repos\Generics\Generics\bin\Debug\net6.0\Generics.pdb
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.csproj.AssemblyReference.cache
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.AssemblyInfoInputs.cache
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.AssemblyInfo.cs
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.csproj.CoreCompileInputs.cache
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.dll
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\ref\Generics.dll
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.pdb
+D:\Users\pbiradar\source\repos\Generics\Generics\obj\Debug\net6.0\Generics.genruntimeconfig.cache

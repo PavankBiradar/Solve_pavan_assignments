@@ -1,0 +1,15 @@
+D:\Users\pbiradar\source\repos\Example1\Example1\bin\Debug\net6.0\Example1.exe
+D:\Users\pbiradar\source\repos\Example1\Example1\bin\Debug\net6.0\Example1.deps.json
+D:\Users\pbiradar\source\repos\Example1\Example1\bin\Debug\net6.0\Example1.runtimeconfig.json
+D:\Users\pbiradar\source\repos\Example1\Example1\bin\Debug\net6.0\Example1.dll
+D:\Users\pbiradar\source\repos\Example1\Example1\bin\Debug\net6.0\ref\Example1.dll
+D:\Users\pbiradar\source\repos\Example1\Example1\bin\Debug\net6.0\Example1.pdb
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.csproj.AssemblyReference.cache
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.AssemblyInfoInputs.cache
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.AssemblyInfo.cs
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.csproj.CoreCompileInputs.cache
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.dll
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\ref\Example1.dll
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.pdb
+D:\Users\pbiradar\source\repos\Example1\Example1\obj\Debug\net6.0\Example1.genruntimeconfig.cache

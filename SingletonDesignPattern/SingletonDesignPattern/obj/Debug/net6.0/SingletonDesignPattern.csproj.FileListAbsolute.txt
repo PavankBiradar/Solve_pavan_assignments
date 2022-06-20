@@ -1,0 +1,15 @@
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\bin\Debug\net6.0\SingletonDesignPattern.exe
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\bin\Debug\net6.0\SingletonDesignPattern.deps.json
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\bin\Debug\net6.0\SingletonDesignPattern.runtimeconfig.json
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\bin\Debug\net6.0\SingletonDesignPattern.dll
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\bin\Debug\net6.0\ref\SingletonDesignPattern.dll
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\bin\Debug\net6.0\SingletonDesignPattern.pdb
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.csproj.AssemblyReference.cache
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.AssemblyInfoInputs.cache
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.AssemblyInfo.cs
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.csproj.CoreCompileInputs.cache
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.dll
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\ref\SingletonDesignPattern.dll
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.pdb
+D:\Users\pbiradar\source\repos\SingletonDesignPattern\SingletonDesignPattern\obj\Debug\net6.0\SingletonDesignPattern.genruntimeconfig.cache

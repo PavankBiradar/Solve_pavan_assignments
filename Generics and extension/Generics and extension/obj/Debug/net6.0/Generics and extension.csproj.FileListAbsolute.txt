@@ -1,0 +1,15 @@
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.csproj.AssemblyReference.cache
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.GeneratedMSBuildEditorConfig.editorconfig
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.AssemblyInfoInputs.cache
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.AssemblyInfo.cs
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.csproj.CoreCompileInputs.cache
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\bin\Debug\net6.0\Generics and extension.exe
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\bin\Debug\net6.0\Generics and extension.deps.json
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\bin\Debug\net6.0\Generics and extension.runtimeconfig.json
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\bin\Debug\net6.0\Generics and extension.dll
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\bin\Debug\net6.0\ref\Generics and extension.dll
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\bin\Debug\net6.0\Generics and extension.pdb
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.dll
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\ref\Generics and extension.dll
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.pdb
+D:\Users\pbiradar\source\repos\Generics and extension\Generics and extension\obj\Debug\net6.0\Generics and extension.genruntimeconfig.cache
