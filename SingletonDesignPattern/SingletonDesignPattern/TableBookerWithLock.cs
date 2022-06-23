@@ -6,32 +6,18 @@ using System.Threading.Tasks;
 
 namespace SingletonDesignPattern
 {
-    public sealed class TableBookerWithLock
+    public sealed class HotelTableWithLock
     {
-        public string BookingType { get; set; }
-
         public string TableNumber { get; set; }
-
         public int BookingTime { get; set; }
-        private static TableBookerWithLock? instance = null;
+        public int ReservedTime { get; set; }
+
+        private static HotelTableWithLock  instance = null;
         private static readonly object obj = new object();
         
-        private TableBookerWithLock() { }//parameterless private constructor
-        private TableBookerWithLock(string bookingType, string tableNumber)
-        {
-            BookingType = bookingType;
-            TableNumber = tableNumber;
-        }
-
-        private TableBookerWithLock(string bookingType, string tableNumber, int bookingTime)
-        {
-            BookingType = bookingType;
-            TableNumber = tableNumber;
-            BookingTime = bookingTime;
-        }
-
-        
-        public static TableBookerWithLock GetInstance
+        private HotelTableWithLock() { }//parameterless private constructor
+      
+        public static HotelTableWithLock GetInstance
         {
             get
             {
@@ -39,7 +25,7 @@ namespace SingletonDesignPattern
                 {
                    if (instance == null)
                    {
-                       instance = new TableBookerWithLock();
+                       instance = new HotelTableWithLock();
                    }
                     return instance;
 

@@ -5,22 +5,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
-    //Assignment: LINQ
-    //1. Create an employee class with properties (Id, Name, City, Salary).
-    //2. Create List of Employees with hardcodes employes(100 entries, Id 1 to 100)
-    //3. Write a Linq query to find employee with an id 45
-    //4. Write a Linq query to find employees with an id that are even
-    //5. Write a Linq query to find highest salary holder
-    //6. Write a Linq query to find highest salary holder in Pune City
-    //7. Write a Linq query to find highest salary holder from each city
-
-
-    class Program
-    {
+    class Program    {
         static void Main(string[] args)
         {
-            //list of employee type
-            List<Employee> empList = new List<Employee>();
+           
+            var empList = new List<Employee>();
 
             var cityList = new List<String> { "Pune", "Latur", "Solapur", "Nagar", "Nagpur", "Usmanabad", "Jalgaon", "Nashik" };
             var random = new Random();
@@ -34,73 +23,44 @@ namespace DesignPatterns
                     EmpName = "Pavan_" + i,
                     City = cityList[index],
                     Salary = 60000 + i
-
-
-
                 }); ;
             }
            ;
 
-
-            //for loop to print the employee details
-            /* for (int i = 0; i <= empList.Count-1; i++)
-             {
-                 Console.WriteLine("EmpId of employee {0} Name is {1} and Employee City is {2}", empList[i].EmpId, empList[i].EmpName, empList[i].City);
-             }*/
-
-
-            //3. Write a Linq query to find employee with an id 45--------------------------------
+          
             Console.WriteLine("1.Employee details with id=45 :");
-            var result1 = empList.Where(e => e.EmpId == 45);
+            var emp45 = empList.First(e => e.EmpId == 45);
+            Console.WriteLine($"ID:{emp45.EmpId} Name: {emp45.EmpName}  City:{emp45.City} Salary: {emp45.Salary} ");
+            
 
-            foreach (var e in result1)
-            {
-                Console.WriteLine(e.EmpName + "--" + e.City);
-            }
-
-            //4. Write a Linq query to find employees with an id that are even-------------------------------------------
             Console.WriteLine("2.Details of employees having even id :");
-            var result2 = empList.Where(e => e.EmpId % 2 == 0);
-
-            foreach (var e in result2)
+            foreach (var e in empList.Where(e => e.EmpId % 2 == 0))
             {
                 Console.WriteLine(e.EmpName + "--" + e.City);
             }
-            //5. Write a Linq query to find highest salary holder---------------------------------------------------------
+            
 
-            var result3 = empList.Max(e => e.Salary);
-
-            Console.WriteLine("3.Maximum Salary of the Employee : {0}", result3);
-
-
-            //6. Write a Linq query to find highest salary holder in Pune City---------------------------------------------
+            var MaxSal = empList.OrderByDescending(e => e.Salary).First();
+            Console.WriteLine($"ID: {MaxSal.EmpId } Name:{MaxSal.EmpName} City:{MaxSal.City} Salary: {MaxSal.Salary}");
 
 
-            var highSalaryCity = empList.Where(emp => emp.City == "Pune").GroupBy(e => e.City)
-              .Select(em => em.OrderByDescending(e => e.Salary).First());
             Console.WriteLine("4.Max Salary in Pune :");
-            foreach (Employee emp in highSalaryCity)
-            {
-                Console.WriteLine("ID:" + emp.EmpId + " Name:" + emp.EmpName + " City:" + emp.City + " Salary:" + emp.Salary);
-            }
+            var emp = empList.Where(emp => emp.City == "Pune").OrderByDescending(e => e.Salary).First();
+            
+                Console.WriteLine($"ID: {emp.EmpId } Name:{emp.EmpName} City:{emp.City} Salary: {emp.Salary}");
+                
+            
 
-
-            //7. Write a Linq query to find highest salary holder from each city------------------------------------------
+           
             Console.WriteLine("5.Employee details having max sal in each respective city :");
-            var highSalEachCity = empList.GroupBy(e => e.City)
-             .Select(em => em.OrderByDescending(e => e.Salary).First());
-            foreach (Employee emp in highSalEachCity)
+
+            foreach (var emp1 in empList.GroupBy(e => e.City)
+             .Select(em => em.OrderByDescending(e => e.Salary).First()))
             {
-                Console.WriteLine("ID:" + emp.EmpId + " Name:" + emp.EmpName + " City:" + emp.City + " Salary:" + emp.Salary);
+                Console.WriteLine($"ID: {emp1.EmpId } Name:{emp1.EmpName} City:{emp1.City} Salary: {emp1.Salary}");
             }
         }
-        class Employee
-        {
-            public int EmpId { get; set; }
-            public string? EmpName { get; set; }
-            public string? City { get; set; }
-            public int Salary { get; set; }
-        }
+        
 
 
     }

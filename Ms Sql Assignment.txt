@@ -1,0 +1,45 @@
+1. Create Employee with coulmns (EmpId, Name, City, Salary)
+
+CREATE TABLE employee ( 
+EMPLOYEE_ID INTEGER Identity(1,1) NOT NULL PRIMARY KEY, 
+EMP_NAME varchar(20) DEFAULT NULL, 
+CITY varchar(20) DEFAULT NULL,
+SALARY INTEGER DEFAULT NULL
+);
+
+---------------------------------------------------------------------------------------------
+2. Fill some  data(100 rows, Id 1 to 100)
+
+    INSERT INTO Employee VALUES ('Pavan','Udgir',6520);
+    INSERT INTO Employee VALUES ('Rohan','Nagar',7520);
+    INSERT INTO Employee VALUES ('Ashish','Pune',4520);
+    INSERT INTO Employee VALUES ('Ram','Udgir',5520);
+    INSERT INTO Employee VALUES ('Shyam','Nagar',8520);
+    INSERT INTO Employee VALUES ('Mohan','Pune',7520);
+    INSERT INTO Employee VALUES ('Karan','Udgir',3520);
+    INSERT INTO Employee VALUES ('Ravan','Nagar',4520);
+    INSERT INTO Employee VALUES ('Soham','Pune',5520);
+---------------------------------------------------------------------------------------------
+3. Write a sql query to find employee with an id 45
+     SELECT * FROM employee WHERE EMPLOYEE_ID=45;
+---------------------------------------------------------------------------------------------
+4. Write a sql query to find employees with an id that are even
+
+    SELECT * FROM employee WHERE EMPLOYEE_ID %2 = 0;
+---------------------------------------------------------------------------------------------
+5. Write a sql query to find highest salary holder
+ 
+ SELECT * FROM employee WHERE SALARY=(SELECT Max(SALARY) FROM employee);
+---------------------------------------------------------------------------------------------
+6. Write a sql query to find highest salary holder in Pune City
+
+    
+    SELECT * FROM employee WHERE SALARY=(SELECT Max(SALARY) FROM employee GROUP BY CITY HAVING CITY='Pune')AND CITY='Pune';
+---------------------------------------------------------------------------------------------
+7. Write a sql query to find highest salary holder from each city
+
+WITH CTE AS
+(
+SELECT ROW_NUMBER() OVER(PARTITION BY CITY ORDER BY SALARY DESC) AS Row#, * FROM  employee )
+SELECT * FROM CTE
+
