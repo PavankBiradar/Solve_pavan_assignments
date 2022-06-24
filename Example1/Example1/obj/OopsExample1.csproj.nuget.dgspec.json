@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\Example1.csproj": {}
+    "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\OopsExample1.csproj": {}
   },
   "projects": {
-    "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\Example1.csproj": {
+    "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\OopsExample1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\Example1.csproj",
-        "projectName": "Example1",
-        "projectPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\Example1.csproj",
+        "projectUniqueName": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\OopsExample1.csproj",
+        "projectName": "OopsExample1",
+        "projectPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\OopsExample1.csproj",
         "packagesPath": "D:\\Users\\pbiradar\\.nuget\\packages\\",
         "outputPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Example1\\Example1\\obj\\",
         "projectStyle": "PackageReference",

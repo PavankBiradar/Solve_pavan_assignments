@@ -10,11 +10,11 @@ namespace Generics_and_extension
 	{
 		public static void Main(string[] args)
 		{
-			string str1 = "Pavankumar";
+			string input = "pavankumar";
 
-			Console.WriteLine("String reverse:" + str1.Reverse());
-			Console.WriteLine("changes case,first letter to upper one: " + str1.ChangeFirstLetterToUpperCase());
-			Console.WriteLine("changes case,first letter to lower one: " + str1.ChangeFirstLetterToLowerCase());
+			Console.WriteLine("First letter case change:" + input.Changecase());
+			input.Reverse();
+			
 		}
 	}
 

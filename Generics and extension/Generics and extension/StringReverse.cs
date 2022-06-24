@@ -9,13 +9,13 @@ namespace Generics_and_extension
 	public static class StringReverse
 	{
 		//Method to reverse the whole String
-		public static string Reverse(this string input)
+		public static void Reverse(this string input)
 		{
-			char[] arr = input.ToCharArray();
-			Array.Reverse(arr);
-
-			string result = new String(arr);
-			return result;
+			char[] letters = input.ToCharArray();
+			for (int i = letters.Length-1; i>=0; i--) { 
+			 Console.Write(letters[i]);
+			}
+			
 		}
 
 

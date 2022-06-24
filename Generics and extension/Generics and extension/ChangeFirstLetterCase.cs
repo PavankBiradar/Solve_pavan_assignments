@@ -8,18 +8,20 @@ namespace Generics_and_extension
 {
     public static class ChangeFirstLetterCase
     {
-        //Method to Change the First letter to upper case
-        public static string ChangeFirstLetterToUpperCase(this string input)
+        //Method to Change the First letter Case
+        public static String  Changecase(this string input)
         {
-            string result = char.ToUpper(input[0]) + input.Substring(1);
-            return result;
+            String Output = "";
+            if (char.ToLower(input[0]) == input[0])
+            {
+                Output = char.ToUpper(input[0]) + input.Substring(1);
+            }
+            else {
+                Output = char.ToLower(input[0]) + input.Substring(1);
+            }
+            return Output;
         }
-        //Method to Change the First Letter To Lower Case
-        public static string ChangeFirstLetterToLowerCase(this string input)
-        {
-            string result = char.ToLower(input[0]) + input.Substring(1);
-            return result;
-        }
+        
     }
 
 
