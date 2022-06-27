@@ -12,7 +12,7 @@ namespace Generics
             String input = "20011998";
             String input1 = "20 jan 2022";
             Converter<int>.Convert(input);
-            Converter<DateTime>.Converttodate(input1);
+            Converter<DateTime>.ConvertToDate(input1);
             
         }
     

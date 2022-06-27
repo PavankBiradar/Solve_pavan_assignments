@@ -10,7 +10,7 @@ namespace Generics
             Console.WriteLine(response);
             return response;
          }
-        public static DateTime Converttodate(string input1)
+        public static DateTime ConvertToDate(string input1)
         {
 
             DateTime response = DateTime.Parse(input1);

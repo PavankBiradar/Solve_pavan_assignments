@@ -9,7 +9,7 @@ namespace Generics_and_extension
     public static class ChangeFirstLetterCase
     {
         //Method to Change the First letter Case
-        public static String  Changecase(this string input)
+        public static String  ChangeCase(this string input)
         {
             String Output = "";
             if (char.ToLower(input[0]) == input[0])
