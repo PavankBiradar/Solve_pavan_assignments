@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\pbiradar\\source\\repos\\Generics and extension\\Generics and extension\\Generics and extension.csproj",
+      "projectUniqueName": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Generics and extension\\Generics and extension\\Generics and extension.csproj",
       "projectName": "Generics and extension",
-      "projectPath": "D:\\Users\\pbiradar\\source\\repos\\Generics and extension\\Generics and extension\\Generics and extension.csproj",
+      "projectPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Generics and extension\\Generics and extension\\Generics and extension.csproj",
       "packagesPath": "D:\\Users\\pbiradar\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\pbiradar\\source\\repos\\Generics and extension\\Generics and extension\\obj\\",
+      "outputPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\Generics and extension\\Generics and extension\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "D:\\Users\\pbiradar\\AppData\\Roaming\\NuGet\\NuGet.Config",

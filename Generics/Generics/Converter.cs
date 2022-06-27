@@ -1,20 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Generics
 {
-    public class Tester {
 
-        public static void Main() {
-            String input = "20011998";
-            String input1 = "20 jan 2022";
-            Converter<int>.Convert(input);
-            Converter<DateTime>.Converttodate(input1);
-            
+        public class Converter<T>
+        {
+        public static int Convert(string input) {
+           
+            int response = Int32.Parse(input);
+            Console.WriteLine(response);
+            return response;
+         }
+        public static DateTime Converttodate(string input1)
+        {
+
+            DateTime response = DateTime.Parse(input1);
+            Console.WriteLine(response);
+            return response;
         }
-    
     }
+    
+
+
+
+
 }
