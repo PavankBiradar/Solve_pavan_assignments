@@ -2,25 +2,26 @@
 namespace Generics
 {
 
-        public class Converter<T>
+        public class Converter
         {
-        public static int Convert(string input) {
-           
-            int response = Int32.Parse(input);
-            Console.WriteLine(response);
-            return response;
-         }
-        public static DateTime ConvertToDate(string input)
-        {
+        public static void ConvertTo<T>(string input) {
 
-            DateTime response = DateTime.Parse(input);
-            Console.WriteLine(response);
-            return response;
-        }
+            if (typeof(T) == typeof(int)) {
+                int response = Int32.Parse(input);
+                Console.WriteLine(response);
+            }
+            else if (typeof(T) == typeof(DateTime)) {
+                DateTime response = DateTime.Parse(input);
+                Console.WriteLine(response);
+            } 
+           
+            }
+            
+         }
+       
     }
     
 
 
 
 
-}

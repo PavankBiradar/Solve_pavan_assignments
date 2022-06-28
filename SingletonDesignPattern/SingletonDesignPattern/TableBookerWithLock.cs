@@ -21,16 +21,15 @@ namespace SingletonDesignPattern
         {
             get
             {
-                lock (obj) 
+                if (instance == null)
                 {
-                   if (instance == null)
-                   {
-                       instance = new HotelTableWithLock();
-                   }
-                    return instance;
-
+                    lock (obj)
+                    {
+                        if (instance == null)
+                            instance = new HotelTableWithLock();
+                    }
                 }
-                   
+                return instance;
             }
         }
     }
