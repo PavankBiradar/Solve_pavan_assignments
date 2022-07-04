@@ -11,7 +11,7 @@ SALARY INTEGER DEFAULT NULL
 2. Fill some  data(100 rows, Id 1 to 100)
 
     INSERT INTO Employee VALUES ('Pavan','Udgir',6520);
-    INSERT INTO Employee VALUES ('Rohan','Nagar',7520);
+    INSERT INTO Employee VALUES ('Rohan','Nagar',7520);5:25 PM 6/30/2022
     INSERT INTO Employee VALUES ('Ashish','Pune',4520);
     INSERT INTO Employee VALUES ('Ram','Udgir',5520);
     INSERT INTO Employee VALUES ('Shyam','Nagar',8520);
@@ -41,5 +41,5 @@ SALARY INTEGER DEFAULT NULL
 WITH CTE AS
 (
 SELECT ROW_NUMBER() OVER(PARTITION BY CITY ORDER BY SALARY DESC) AS Row#, * FROM  employee )
-SELECT * FROM CTE
+SELECT * FROM CTE WHERE Row#='1';
 
