@@ -13,9 +13,6 @@ namespace RestAPIExample.Models
 
        
 
-        internal static List<Employee> SingleOrDefault(Func<object, bool> p)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

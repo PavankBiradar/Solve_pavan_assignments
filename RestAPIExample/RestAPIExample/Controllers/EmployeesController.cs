@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RestAPIExample.EmpData;
+using RestAPIExample.Models;
 using System;
 
 namespace RestAPIExample.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("[controller]")]
+    
     public class EmployeesController : ControllerBase
     {
         private IEmpData _empData;
@@ -17,7 +19,7 @@ namespace RestAPIExample.Controllers
         
         }
         [HttpGet]
-        [Route("All")]
+        [Route("GetAllEmp")]
         public IActionResult GetEmployees() { 
 
             return Ok(_empData.GetEmployees());
@@ -25,7 +27,7 @@ namespace RestAPIExample.Controllers
         }
 
         [HttpGet]
-        [Route("{id}")]
+        [Route("GetEmpbyId/{id}")]
         public IActionResult GetEmployee(int id)
         {
             var employee = _empData.GetEmployee(id);
@@ -34,25 +36,31 @@ namespace RestAPIExample.Controllers
         }
 
         [HttpGet]
-        [Route("{City}")]
-        public IActionResult GetHighestSalEmployee(string City)
+        [Route("GetHigestSalEmpfromCity/{City}")]
+        public IActionResult GetHighestSalEmp(string city)
         {
-            var employee = _empData.GetHighestSalEmployee(City);
-            return Ok(employee);
+             
+            return Ok(_empData.GetHighestSalEmp(city));
 
         }
 
-
-        /*
         [HttpPost]
-        [Route("api/[controller]/{EmpName}")]
-        public IActionResult GetEmployeeId(string Empname)
+        [Route("AddEmp")]
+        public void AddEmp(Employee employee)
         {
-            var employee = _empData.GetEmployeeId(City);
+            _empData.AddEmployee(employee);
+        }
+
+
+        [HttpPost]
+        [Route("{EmpName}")]
+        public IActionResult GetEmpId(string Empname)
+        {
+            var employee = _empData.GetEmpId(Empname);
             return Ok(employee);
 
         }
-        */
+
 
     }
 }

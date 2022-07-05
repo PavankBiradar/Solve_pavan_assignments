@@ -17,9 +17,9 @@ namespace RestAPIExample.EmpData
             new Employee(){Id = 7,EmpName= "Pavan",Salary= 700,City="Latur"},
             new Employee(){Id = 8,EmpName ="Daman",Salary= 1300,City="Pune"},
         };
-        public Employee AddEmployee(Employee employee)
+        public void AddEmployee(Employee employee)
         {
-            throw new System.NotImplementedException();
+            employees.Add(employee);
         }
 
         public Employee DeleteEmployee(Employee employee)
@@ -38,13 +38,23 @@ namespace RestAPIExample.EmpData
 
          public Employee GetEmployee(int id)
          {
-            return employees.SingleOrDefault(e => e.Id == id);
+            var GetEmployeebyId = employees.FirstOrDefault(e => e.Id == id);
+            return GetEmployeebyId;
              
          }
 
-        public Employee GetHighestSalEmployee(string City)
+        public Employee GetHighestSalEmp(string city)
         {
-            return employees.Where(emp => emp.City == City).OrderByDescending(e => e.Salary).First();
+            var HighestSalEmp = employees.Where(emp => emp.City == city).OrderByDescending(e => e.Salary).First();
+            return HighestSalEmp;
+
         }
+        public Employee GetEmpId(string Empname)
+        {
+            return employees.FirstOrDefault(emp => emp.EmpName == Empname);
+           
+
+        }
+
     }
 }

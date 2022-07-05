@@ -12,9 +12,11 @@ namespace RestAPIExample.EmpData
     {
         List<Employee> GetEmployees();
         Employee GetEmployee(int id);
-        Employee AddEmployee(Employee employee);
+        void AddEmployee(Employee employee);
         Employee DeleteEmployee(Employee employee);
         Employee EditEmployee(Employee employee);
-        Employee GetHighestSalEmployee(string City);
+        Employee GetHighestSalEmp(string city);
+
+        Employee GetEmpId(string Empname);
     }
 }
