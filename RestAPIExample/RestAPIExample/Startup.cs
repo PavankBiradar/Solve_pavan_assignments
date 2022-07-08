@@ -26,7 +26,7 @@ namespace RestAPIExample
         {
             services.AddCors();
             services.AddControllers();
-            services.AddSingleton<IEmpData,EmpDataImpl>();
+            services.AddSingleton<IEmployeeData,EmployeeDataImplimentation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

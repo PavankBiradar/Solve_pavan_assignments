@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\pbiradar\\source\\repos\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj": {}
+    "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj": {}
   },
   "projects": {
-    "D:\\Users\\pbiradar\\source\\repos\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj": {
+    "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\pbiradar\\source\\repos\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj",
+        "projectUniqueName": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj",
         "projectName": "RestAPIExample",
-        "projectPath": "D:\\Users\\pbiradar\\source\\repos\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj",
+        "projectPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\RestAPIExample\\RestAPIExample\\RestAPIExample.csproj",
         "packagesPath": "D:\\Users\\pbiradar\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\pbiradar\\source\\repos\\RestAPIExample\\RestAPIExample\\obj\\",
+        "outputPath": "D:\\Users\\pbiradar\\Desktop\\LocalRepo\\Solve_pavan_assignments\\RestAPIExample\\RestAPIExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "D:\\Users\\pbiradar\\AppData\\Roaming\\NuGet\\NuGet.Config",

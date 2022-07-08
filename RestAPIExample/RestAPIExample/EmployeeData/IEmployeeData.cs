@@ -8,15 +8,15 @@ namespace RestAPIExample.EmpData
 
 
 {
-    public interface IEmpData
+    public interface IEmployeeData
     {
         List<Employee> GetEmployees();
         Employee GetEmployee(int id);
         void AddEmployee(Employee employee);
         Employee DeleteEmployee(Employee employee);
         Employee EditEmployee(Employee employee);
-        Employee GetHighestSalEmp(string city);
+        Employee GetHighestSalaryEmployee(string city);
 
-        Employee GetEmpId(string Empname);
+        Employee GetEmployeeId(string EmployeeName);
     }
 }
