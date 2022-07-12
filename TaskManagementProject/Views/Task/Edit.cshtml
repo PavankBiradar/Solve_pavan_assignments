@@ -1,0 +1,77 @@
+﻿@model TaskManagementProject.Models.Task
+
+
+
+
+@using (Html.BeginForm())
+{
+    <style>
+        td {
+            text-align: left;
+            width:200px;
+        }
+       table{
+           border-width:20px;
+           margin-left: auto;
+           margin-right: auto;
+       }
+        .head {
+            text-align: Center;
+        }
+    </style>
+
+    <div class="head"><h3>Update Task</h3></div>
+          <table>
+             <tr>
+                  <td> 
+                      @Html.LabelFor(t => t.TaskId)
+                  </td>
+                  <td>
+                      @Html.HiddenFor(t => t.TaskId)
+                    @*  @Html.TextBoxFor(t => t.TaskId)*@ 
+                  </td>
+               </tr>
+
+              <tr>
+                  <td>
+                      @Html.LabelFor(t => t.Title)
+                  </td>
+                  <td> 
+                      @Html.TextBoxFor(t => t.Title) 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                      @Html.LabelFor(t => t.Description)
+                  </td>
+                  <td>  
+                      @Html.TextAreaFor(t => t.Description) 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                      @Html.LabelFor(t => t.Assignee)
+                  </td>
+                  <td> 
+                       @Html.TextBoxFor(t => t.Assignee) 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td>
+                      @Html.LabelFor(t => t.Due_Date)
+                  </td>
+                  <td>  
+                      @Html.TextBoxFor(t => t.Due_Date) 
+                  </td>
+              </tr>
+
+              <tr>
+                  <td> </td>
+                  <td><input type="submit" /> </td>
+              </tr>
+          </table>
+ 
+}

@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "D:\\Users\\pbiradar\\.dotnet\\store\\|arch|\\|tfm|",
+      "D:\\Users\\pbiradar\\.nuget\\packages"
+    ]
+  }
+}

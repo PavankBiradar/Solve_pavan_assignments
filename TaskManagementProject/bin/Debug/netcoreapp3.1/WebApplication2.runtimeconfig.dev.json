@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "D:\\Users\\snikam\\.dotnet\\store\\|arch|\\|tfm|",
+      "D:\\Users\\snikam\\.nuget\\packages"
+    ]
+  }
+}

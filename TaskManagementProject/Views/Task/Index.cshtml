@@ -1,0 +1,75 @@
+﻿
+
+@model TaskManagementProject.Models.TaskViewModel
+
+  @{
+        var assigneesNameList = new List<SelectListItem>() { new SelectListItem() { Text = "Select", Value = "-1" }};
+        if(Model.AssigneeList != null){
+            foreach (var assignee in Model.AssigneeList)
+            {
+                 assigneesNameList.Add(new SelectListItem() { Text = assignee, Value = assignee });
+            }
+        }}
+
+ <style>
+     .index {
+  text-align: Center;
+}
+     
+.lable {
+  text-align: Left;
+}
+.button {
+  /*float: right;*/
+   margin-right: auto;
+}
+.thead{
+           
+           margin-left: auto;
+           margin-right: auto;
+
+}
+</style>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+</style>
+
+<div class="index">
+    <div>@Html.ActionLink("Define new Task", "Assign")<br/><br/></div>
+    
+   
+    @using (Html.BeginForm())
+{
+    <label class="label" for="AssigneeNameList">Assignee :</label>
+    
+    @Html.DropDownListFor(t => t.SelectedAssignee, assigneesNameList)
+
+    <input type="submit" class="button" value="Load"/>
+
+    
+}
+    <table class="thead">
+        <tr>
+            <th>TaskId</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Assignee</th>
+            <th>Due_Date</th>
+            <th></th>
+        </tr>
+        @foreach(var task1 in Model.TasksList) { 
+        <tr >
+            <td>@task1.TaskId</td>
+            <td>@task1.Title</td>
+            <td>@task1.Description</td>
+            <td>@task1.Assignee</td>
+            <td>@task1.Due_Date</td>
+
+
+            <td>@Html.ActionLink("Edit Task", "Edit", new { id = task1.TaskId })</td>
+        </tr>
+        }
+    </table>
+    </div>
