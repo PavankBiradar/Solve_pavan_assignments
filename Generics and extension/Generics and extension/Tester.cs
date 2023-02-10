@@ -10,7 +10,7 @@ namespace Generics_and_extension
 	{
 		public static void Main(string[] args)
 		{
-			string input = "pavankumar";
+			string input = Console.ReadLine();
 
 			Console.WriteLine("First letter case change:" + input.ChangeCase());
 			input.Reverse();
